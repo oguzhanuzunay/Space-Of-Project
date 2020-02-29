@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay">
+      <h3>Searching now...</h3>
+    </div>
+    <div class="hero-bg">
+      <section class="top">
+        <header>
+          <a href="#">yummy.eats</a>
+        </header>
+        <h1><span> The Healty </span>Eating Experience</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+          laboriosam vitae iure nesciunt velit delectus quae sunt sint eos ipsum
+          libero illum animi rerum fugiat!
+        </p>
+        <div class="form-container">
+          <form action="">
+            <div class="form-left">
+              <label for="city">Enter Your City:</label>
+              <input type="text" name="city" id="city" />
+              <p>Example="San Diego"</p>
+            </div>
+            <input type="button" value="Find Food Now" id="cta-btn" />
+          </form>
+        </div>
+      </section>
+    </div>
+    <section class="authentic">
+      <div class="right-col">
+        <h2>Authetic. Awesome.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iste
+          impedit iusto porro numquam perferendis alias commodi aperiam non
+          vitae ipsa ullam voluptas, nemo itaque dolor deleniti magni facere
+          voluptatum!
+        </p>
+      </div>
+      <img src="images/food.jpg" alt="Picture of Food Some Food" />
+    </section>
+
+    <script>
+      let btn = document.getElementById("cta-btn");
+      let srcScreen = document.getElementById("overlay");
+      btn.addEventListener("click", () => {
+        srcScreen.style.display = "grid";
+        srcScreen.classList.add("animated-overlay");
+        setTimeout(() => {
+          srcScreen.style.display = "none";
+          srcScreen.classList.remove("animated-overlay");
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
