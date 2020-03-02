@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap");
+body {
+  font-family: "Source Sans Pro";
+}
+section {
+  display: block;
+}
+.top {
+  display: block;
+}
+.leaf {
+  display: none;
+}
+.nav-cont {
+  display: block;
+  width: 100%;
+  margin: 2%;
+}
+.about-cont {
+  display: inline;
+}
+
+h1 {
+  text-transform: uppercase;
+  display: block;
+  width: 30%;
+  font-size: 3.2em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-left: 3%;
+  margin-bottom: 0em;
+}
+
+nav {
+  margin-top: -2.2em;
+  display: block;
+  margin-right: 1em;
+  float: right;
+  align-self: flex-end;
+  display: block;
+  font-size: 2.1em;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-line: none;
+  padding: 0.3em;
+}
+a:hover {
+  color: white;
+  padding: 0.4em;
+  background-color: brown;
+  border-radius: 0.5em;
+}
+.about-cont {
+  display: grid;
+  float: left;
+  grid-template-columns: 49% 49%;
+  margin: 0em;
+}
+.about-text {
+  font-family: monospace;
+  display: block;
+  margin: 0 2em 0 2em 0;
+  text-align: center;
+  height: 100%;
+  text-align: left;
+  margin-left: 1em;
+  font-size: 2em;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.about-cont img {
+  width: 90%;
+  margin: 0 0 3em 2em;
+  padding: 0;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.about-text p {
+  margin: 1.2em;
+}
+h2 {
+  text-align: center;
+  margin: 1.5em;
+  font-weight: bold;
+  font-size: 2em;
+}
+.portfolio {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-self: center;
+  margin-left: 1em;
+}
+.portfolio div {
+  width: 100%;
+  padding: -1em;
+}
+.portfolio div img {
+  width: 90%;
+  align-self: center;
+}
+.portfolio div {
+  text-align: center;
+}
+.portfolio h4 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.portfolio p {
+  font-size: 1.5em;
+}
+
+.bot-skill h3 {
+  display: block;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 1em;
+  margin-top: 4em;
+}
+.bot-skill img {
+  width: 100%;
+  align-self: center;
+}
+.bot-skill img {
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.contact {
+  text-align: center;
+}
+.contact h3 {
+  margin-top: 1em;
+  font-size: 2em;
+}
+.contact p {
+  font-family: "Ubuntu";
+  font-size: 28px;
+  margin: 1em;
+}
+.contact li {
+  font-size: 28px;
+  list-style: none;
+}
+@media screen and (max-width: 1024px) {
+  .top h1 {
+    font-size: 2em !important;
+    margin: 0em !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .top nav {
+    width: 100% !important;
+    font-size: 1.3em;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 0.5em !important;
+  }
+  nav a {
+    padding: 1em;
+  }
+  p {
+    font-size: 0.55em;
+  }
+  h2 {
+    width: 100%;
+    font-size: 1.3em;
+  }
+  .middle {
+    grid-template-columns: 49% 49%;
+  }
+
+  .middle h4 {
+    font-size: 1.4em;
+  }
+  .portfolio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50% !important;
+    align-self: center;
+    margin-left: 1em;
+  }
+  .bot-skill h3 {
+    font-size: 1.4em;
+  }
+  .contact h3 {
+    font-size: 1.4em;
+    margin: 1em;
+  }
+  .contact p {
+    font-size: 1em;
+  }
+  .contact li {
+    font-size: 1em;
+    margin: 1em;
+  }
+  .bottom {
+    margin-bottom: 4.5em;
+  }
+  footer {
+    margin-top: 1em;
+  }
+  footer h1 {
+    font-size: 1.2em;
+  }
+  .clearfix nav {
+    font-size: 1.2em;
+    margin-bottom: 0em;
+  }
+}
+
+@media (max-width: 768px) {
+  .top h1 {
+    font-size: 2.2em !important;
+    margin: 0em !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .top nav {
+    display: grid;
+    grid-template-columns: 100% !important;
+  }
+  .top a {
+    display: block;
+    text-align: center;
+    border-radius: 0.5em;
+    padding: 0.7em;
+  }
+  p {
+    font-size: 0.55em;
+  }
+  h2 {
+    width: 100%;
+    font-size: 1.3em;
+  }
+  .about-cont {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 2em;
+  }
+  .about-text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .about-cont img {
+    width: auto;
+    margin: auto;
+    margin-bottom: 2em;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .about-cont p {
+    font-size: 0.7em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  .portfolio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100% !important;
+    align-self: center;
+    margin-left: 1em;
+  }
+  .bot-skill h3 {
+    font-size: 1.4em;
+  }
+  .contact h3 {
+    font-size: 1.4em;
+    margin: 1em;
+    font-weight: bold;
+  }
+  .contact p {
+    font-size: 1.2em;
+  }
+  .contact li {
+    font-size: 1.3em;
+    margin: 0.5em;
+  }
+  .bottom {
+    margin-bottom: 1em;
+  }
+  footer {
+    margin-top: 1em;
+  }
+  footer h1 {
+    font-size: 1.2em;
+  }
+  .clearfix nav {
+    font-size: 1.2em;
+    margin-bottom: 0em;
+  }
+  .clearfix a {
+    display: none;
+  }
+  .leaf {
+    color: deepskyblue;
+    display: block;
+  }
+}
